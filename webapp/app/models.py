@@ -25,6 +25,7 @@ class Announcement:
     publish_time: str = ""      # 原始发布时间文本
     deadline: Optional[str] = None   # 投标截止时间原文；未给出时为 None
     declares_extension: bool = False  # 正文是否明确声明延期/顺延
+    order_note: str = ""        # 归并时对发布时间先后的提示（如精度不足、与同批公告先后不明）
 
 
 @dataclass
